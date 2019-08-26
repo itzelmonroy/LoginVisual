@@ -31,7 +31,11 @@ namespace Login2._0
         {
             if (textBox_usuario.Text=="juancho" && popo.Text=="123tamarindo")
             {
-
+                MessageBox.Show("bienvenido don juancho");
+                this.Hide();
+                ventana2 CursosVentana = new ventana2();
+                CursosVentana.Show();
+                this.Visible = false; 
             }
             else
             {
@@ -40,6 +44,14 @@ namespace Login2._0
                 popo.Text = "";
                 textBox_usuario.Focus(); 
 
+            }
+        }
+
+        private void TextBox_usuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                popo.Focus(); 
             }
         }
     }

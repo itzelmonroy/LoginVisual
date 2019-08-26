@@ -74,6 +74,7 @@
             this.textBox_usuario.Size = new System.Drawing.Size(510, 20);
             this.textBox_usuario.TabIndex = 3;
             this.textBox_usuario.TextChanged += new System.EventHandler(this.TextBox_usuario_TextChanged);
+            this.textBox_usuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_usuario_KeyPress);
             // 
             // popo
             // 
